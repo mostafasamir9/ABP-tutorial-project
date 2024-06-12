@@ -1,50 +1,50 @@
-# ABP-Tutorial-Project
+# ABP Tutorial Project
 
-Welcome to the ABP-Tutorial-Project! This project is designed to help you get started with the Asp.Net Boilerplate (ABP) framework, a powerful and flexible framework for building modern web applications.
+This project is a training exercise in the ABP (ASP.NET Boilerplate) framework, featuring a backend in ASP.NET Core and a frontend in Angular. The solution is divided into two main parts: the API project (`aspnet-core`) and the Angular project (`angular`).
 
-## Features
+## Project Structure
 
-- **Modular Architecture**: Easily create, maintain, and reuse modules.
-- **Dependency Injection**: Simplifies service creation and injection.
-- **Authorization and Authentication**: Built-in support for user authentication and role-based authorization.
-- **Multi-Tenancy**: Supports creating multi-tenant applications out of the box.
-- **Localization**: Easily create multi-lingual applications.
+- `angular/`: Contains the Angular frontend application.
+- `aspnet-core/`: Contains the ASP.NET Core backend application.
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
+- .NET 6 SDK
+- Node.js (v14.15 or later)
+- Angular CLI
 
-- [.NET Core SDK](https://dotnet.microsoft.com/download)
-- [Node.js](https://nodejs.org/) (for front-end dependencies)
+## Running the Application
 
-### Installation
+### Backend (ASP.NET Core)
 
-1. **Clone the repository**:
+1. Navigate to the `aspnet-core` directory.
+2. Open the solution in Visual Studio and set the `Web.Host` project as the startup project.
+3. Ensure the connection string in `appsettings.json` is correctly set.
+4. Open the Package Manager Console and run:
     ```sh
-    git clone https://github.com/yourusername/ABP-tutorial-project.git
-    cd ABP-tutorial-project
+    Update-Database
     ```
+5. Run the backend project.
 
-2. **Restore dependencies**:
+### Frontend (Angular)
+
+1. Navigate to the `angular` directory.
+2. Install the necessary npm packages:
     ```sh
-    dotnet restore
+    npm install
     ```
-
-3. **Run the application**:
+3. Start the Angular application:
     ```sh
-    dotnet run
+    npm start
     ```
+4. Open your browser and go to `http://localhost:4200`.
 
-### Usage
+## Default Login
 
-Navigate to `http://localhost:5000` in your browser to see the application in action. You can log in using the default credentials: 
 - Username: `admin`
-- Password: `123qwe`
+- Password: `1q2w3E*`
 
-## Contributing
+## Resources
 
-Contributions are welcome! Please fork this repository and submit a pull request for any enhancements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+- [ABP Documentation](https://docs.abp.io/en/abp/latest/Getting-Started)
+- [Angular CLI](https://cli.angular.io/)
